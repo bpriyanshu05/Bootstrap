@@ -1,0 +1,141 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    margin-bottom: 20px;
+}
+
+.slider-container label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.slider-container input[type="range"] {
+    width: 70%;
+    vertical-align: middle;
+}
+
+.accordion-container {
+    margin-bottom: 20px;
+}
+
+.accordion {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+.accordion:hover, .accordion.active {
+    background-color: #0056b3;
+}
+
+.panel {
+    padding: 10px 20px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    border: 1px solid #007BFF;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tabs-container {
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-right: 5px;
+    border-radius: 4px 4px 0 0;
+}
+
+.tab-button:hover, .tab-button.active {
+    background-color: #0056b3;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    border: 1px solid #007BFF;
+    border-radius: 0 4px 4px 4px;
+    background: white;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.fetched-data-container {
+    margin-bottom: 20px;
+}
+
+#fetch-data-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#fetch-data-button:hover {
+    background-color: #0056b3;
+}
+
+#data-display {
+    margin-top: 20px;
+}
+
+#data-display div {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+#data-display h3 {
+    margin: 0 0 10px 0;
+}
+
+#data-display p {
+    margin: 0;
+}

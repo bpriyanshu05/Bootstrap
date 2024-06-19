@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Content with JavaScript</title>
+    <link rel="stylesheet" href="3rdtask.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dynamic Content with JavaScript</h1>
+
+        <!-- Slider -->
+        <div class="slider-container">
+            <label for="slider">Volume:</label>
+            <input type="range" id="slider" min="0" max="100" value="50">
+            <span id="slider-value">50</span>
+        </div>
+
+        <!-- Accordion -->
+        <div class="accordion-container">
+            <button class="accordion">Section 1</button>
+            <div class="panel">
+                <p>Content for section 1.</p>
+            </div>
+            <button class="accordion">Section 2</button>
+            <div class="panel">
+                <p>Content for section 2.</p>
+            </div>
+            <button class="accordion">Section 3</button>
+            <div class="panel">
+                <p>Content for section 3.</p>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs-container">
+            <button class="tab-button active" onclick="openTab(event, 'Tab1')">Tab 1</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab2')">Tab 2</button>
+            <button class="tab-button" onclick="openTab(event, 'Tab3')">Tab 3</button>
+
+            <div id="Tab1" class="tab-content active">
+                <h2>Tab 1</h2>
+                <p>Content for Tab 1.</p>
+            </div>
+            <div id="Tab2" class="tab-content">
+                <h2>Tab 2</h2>
+                <p>Content for Tab 2.</p>
+            </div>
+            <div id="Tab3" class="tab-content">
+                <h2>Tab 3</h2>
+                <p>Content for Tab 3.</p>
+            </div>
+        </div>
+
+        <!-- Fetched Data -->
+        <div class="fetched-data-container">
+            <h2>Fetched Data</h2>
+            <button id="fetch-data-button">Fetch Data</button>
+            <div id="data-display"></div>
+        </div>
+    </div>
+
+    <noscript>
+        <p>JavaScript is disabled in your browser. Some features may not work properly.</p>
+    </noscript>
+
+    <script src="3rdtask.js"></script>
+</body>
+</html>
